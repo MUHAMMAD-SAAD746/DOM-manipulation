@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Photo Gallery</title>
+	<title>Interactive Photo Gallery</title>
 	<link rel="stylesheet" href="./style.css">
-	<script src = "./script.js"></script>
+	<script src="./script.js" defer></script>
 </head>
-<body>
-	
-	<div id = "image">
+
+<body onload="initGallery()">
+
+	<div id="image">
 		Hover over an image below to display here.
 	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<div class="gallery">
+		<img class="preview" alt="Golden Retriever Puppy"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg">
+
+		<img class="preview" alt="Cute Dog with Bandana"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG">
+
+		<img class="preview" alt="Young Puppy Looking Away"
+			src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg">
+
+		<img class="preview" alt="Smiling Labrador" src="https://picsum.photos/id/237/200/300">
+
+		<img class="preview" alt="Puppy Playing on Grass"
+			src="https://images.unsplash.com/photo-1507149833265-60c372daea22?w=300&h=300&fit=crop">
+
+		<img class="preview" alt="Brown Dog Closeup" src="https://placebear.com/200/300">
+	</div>
 
 </body>
+
 </html>
